@@ -1,8 +1,16 @@
-# React + Vite
+# Three main pillars of React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. JSX - look like HTML but is not HTML. But when we
+transpile a React project -- it becomes JavaScript object
+```
+  React/JSX --> Transpiliation --> Browser-based JS
+```
 
-Currently, two official plugins are available:
+The transpiliation happens automatically during development (because of NodeJS) but if we are deploying
+to a live server, we need to do a `npm run build` -- this is akin to compliation in Java.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1b. JSX can be in components, which are functions that return JSX -- reusable JSX
+
+2. When the state changes -- via the setter function -- the component is redrawn (or re-rendered)
+
+3. Events
